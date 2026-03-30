@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | LORIN</title>
+</head>
+<link rel="stylesheet" href="/portfolio.css">
+<body>
+    <header id="top">
+        <h1>Welcome to my portfolio! I’m Lorin from BSIT-1A.</h1>
+    </header>
+
+       <div id="profile">
+
+        <img class="prof" src="/PICTURES/IMG_5800.JPG" width="20%">
+        <ul>
+            <li><h2>CARA LORIN P. DAVID</h2></li>
+            <li><b>Email:</b> <a>caralorinpd@gmail.com</a></li>
+            <li><b>Phone:</b> 0991 379 8665</li>
+            <li><b>Facebook:</b> Lorin David</li>
+            
+            <li><br> Welcome to my Portfolio! This includes information about me and my WS101 lab exercises. It shows my progress and how I understand the subject.</li>
+        </ul>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#educ">Education</a></li>
+                <li><a href="#activities">Projects</a></li>
+                
+            </ul>
+        </nav>
+
+
+
+        <div id="about">
+            <div id="aboutme">
+                <h3>About Me</h3>
+                <p>I am Lorin, a 1st year BSIT student aspiring to become a successful IT professional. I am willing to strive and achieve my goals. People often see me as a lively and jolly person. I enjoy meeting new people, and what I truly want is to grow and keep learning.</p>
+            </div>
+    
+
+            <div id="believe">
+                <P>I believe that everyone has the right to express themselves freely. Life is something beautiful, it’s not meant to be wasted. I also believe that love is something to be unlocked when I can stand on my own. For me, having stability within myself is better than trying to find it in another person.</P>
+                <h3>I Believe In</h3>
+            </div>
+
+
+            <div id="love">
+                <h3>I Love</h3>
+                <p> I love drinking matcha, especially a hot pure matcha latte from Starbucks. I admire people who see life differently and know what they really want. I love my friends who inspire me to do better, and I love my family because I’m surrounded by so much love. Lastly, I love my cat—my fur son, because he’s been my emotional support ever since.</p>
+            </div>
+        </div>
+
+
+<hr>
+            <div id="educ">
+                <H3>Education</H3>
+                 <ul>
+                    <li>Currently studying BSIT at PSAU</li>
+                    <li>Angeles City Science Highschool, 2025</li>
+                    <li>Young Builders' School Inc, 2023</li>
+                </ul>
+            </div>
+
+        <hr>
+        
+            <div id="activities">
+                <h3>My Projects</h3>
+                <ol>
+                    
+                    <li>Midterm Lab Task 1- <a href="">Resume</a></li>
+                    <li>Midterm Lab Task 2- <a href="">Nested List</a></li>
+                    <li>Midterm Lab Task 3- <a href="">Image Maps</a></li>
+                    <li>Midterm Lab Task 4- <a href="">HTML Forms</a></li>
+                    <li>Midterm Lab Task 5- <a href="">Applying CSS style on your resume</a></li>
+                    <li>Midterm Lab Task 6- <a href="">Using CSS display property</a></li>
+                    
+                </ol>
+
+            </div>
+        <footer>
+            <p>Thank you for visiting my portfolio!</p>
+            <a href="#top">BACK TO TOP</a>
+        </footer>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+</html>
