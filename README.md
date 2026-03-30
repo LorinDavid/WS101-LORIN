@@ -305,7 +305,7 @@
 
        <div id="profile">
 
-        <img class="prof" src="/PICTURES/IMG_5800.JPG" width="20%">
+        <img class="prof" src="/PORTFOLIO/PICTURES/IMG_5800.JPG" width="20%">
         <ul>
             <li><h2>CARA LORIN P. DAVID</h2></li>
             <li><b>Email:</b> <a>caralorinpd@gmail.com</a></li>
