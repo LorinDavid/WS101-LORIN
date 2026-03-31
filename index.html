@@ -179,6 +179,39 @@
         padding-right: 10px;
     }
 
+    #aboutme, #believe, #love {
+        flex-direction: row; 
+        gap: 40px;
+        color: white;
+    }
+    #believe {
+        justify-content: space-between; 
+    }
+
+    #believe h3 {
+        order: 2; 
+    }
+
+    #believe p {
+        order: 1; 
+        text-align: right; 
+    }
+
+    #about h3 {
+        flex: 1; 
+        font-family: cursive;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        margin: 0;
+        min-width: 200px;
+    }
+
+    #about p {
+        flex: 2;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+    }    
+
     @media screen and (max-width: 600px) {
         #aboutme, #believe, #love, #educ {
             margin: 20px auto; 
