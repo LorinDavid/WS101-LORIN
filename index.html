@@ -218,6 +218,20 @@
             padding: 20px;
         }
     }
+    @media screen and (max-width: 800px) {
+        #aboutme, #believe, #love {
+            flex-direction: column; 
+            text-align: center;    
+            gap: 15px;              
+        }
+
+        #aboutme h3, #believe h3, #love h3, 
+        #aboutme p, #believe p, #love p {
+            flex: none;             
+            width: 100%;            
+            order: 0;               
+        }
+    }
     #activities{
         padding: 20px;
         border-radius: 30px;
