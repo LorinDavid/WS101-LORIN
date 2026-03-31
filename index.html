@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>😝 PORTFOLIO | LORIN</title>
+    <title>PORTFOLIO | LORIN</title>
 </head>
 <style>
         body{
@@ -90,40 +90,55 @@
         }
     }
     
+    nav {
+        position: fixed;  
+        bottom: 20px;        
+        left: 0;
+        width: 100%;        
+        z-index: 1000;    
+        pointer-events: none; 
+    }
 
-    nav ul{
+    nav ul {
         list-style: none;
         display: flex;
-        gap: 20px;
+        gap: 15px;
         align-items: center;
         justify-content: center;
-        padding: 0; 
-        width: 100%;
-         
-        
+        padding: 0;
+        margin: 0;
+        pointer-events: auto; 
     }
-    nav a{
-        padding: 20px 40px;
+
+    nav a {
         text-decoration: none;
-        color: black;
-        background-color: rgb(21, 105, 21, .8);
+        background-color: rgba(21, 105, 21, 0.9); 
         border-radius: 30px;  
         display: flex;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 20px;
-        font-weight:550;
+        font-size: 18px; 
+        font-weight: 550;
         color: azure;
         transition: 0.3s;
-        padding: 10px 20px;
-        
+        padding: 12px 25px;   
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
     }
 
-    nav a:hover{
+    nav a:hover {
         background-color: rgb(21, 105, 21);
-        color: azure;
-        transform: scale(1.05);   
-        transition: 0.3s;
+        transform: translateY(-5px) scale(1.05); 
     }
+
+    @media screen and (max-width: 600px) {
+        nav a {
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+        nav ul {
+            gap: 8px;
+        }
+    }  
+     
 
       
    #aboutme, #believe, #love, #educ {
@@ -320,6 +335,52 @@
                 font-size: 18px;
             }
         }
+
+      #socials {
+    padding: 30px;
+    margin: 40px auto; 
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+#socials h3 {
+    margin: 0;
+    background-color: rgb(223, 210, 24);
+    padding: 10px 30px;
+    border-radius: 50px;
+    
+
+    color: rgb(21, 105, 21);
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.social-icons-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#socials a img {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+#socials a img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
 </style>
 <body>
     <header id="top">
@@ -331,14 +392,18 @@
         <img class="prof" src="PORTFOLIO/PICTURES/IMG_5800.JPG" width="20%">
         <ul>
             <li><h2>CARA LORIN P. DAVID</h2></li>
-            <li><b>Email:</b> <a>caralorinpd@gmail.com</a></li>
-            <li><b>Phone:</b> 0991 379 8665</li>
-            <li><b>Facebook:</b> Lorin David</li>
+            <li>Angeles City, Pampanga, Philippines</li>
+            <li>caralorinpd@gmail.com</li>
+            <li>0991 379 8665</li>
             
             <li><br> Welcome to my Portfolio! This includes information about me and my WS101 lab exercises. It shows my progress and how I understand the subject.</li>
         </ul>
 
         </div>
+
+        
+
+
 
         <nav>
             <ul>
@@ -346,6 +411,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#educ">Education</a></li>
                 <li><a href="#activities">Projects</a></li>
+                <li><a href="#socials">Contacts</a></li>
                 
             </ul>
         </nav>
@@ -398,16 +464,22 @@
                 </ol>
 
             </div>
+
+            <div id="socials">
+            <h3>Contact Me</h3>
+            <div class="social-icons-row">
+            <a href="https://www.facebook.com/share/1NF5njh4fM/?mibextid=wwXIfr"><img src="PORTFOLIO/PICTURES/facebook.png" width="30%"></a>
+            <a href="https://www.instagram.com/lxrnnd?igsh=MW03YTNxdmNxcTh2bg%3D%3D&utm_source=qr"><img src="PORTFOLIO/PICTURES/insta.webp" width="30%"></a>
+            <a href="https://www.tiktok.com/@lxrnnd?_r=1&_t=ZS-9593jrrA1vZ"><img src="PORTFOLIO/PICTURES/tiktok.avif" width="30%"></a>
+            </div>
+
+        </div>
         <footer>
             <p>Thank you for visiting my portfolio!</p>
-            <a href="#top">BACK TO TOP</a>
         </footer>
 
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
 </body>
 </html>
