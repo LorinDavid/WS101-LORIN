@@ -97,6 +97,8 @@
         gap: 20px;
         align-items: center;
         justify-content: center;
+        padding: 0; 
+        width: 100%;
          
         
     }
@@ -112,6 +114,7 @@
         font-weight:550;
         color: azure;
         transition: 0.3s;
+        padding: 10px 20px;
         
     }
 
@@ -121,8 +124,6 @@
         transform: scale(1.05);   
         transition: 0.3s;
     }
-
-    
 
       
     #aboutme, #believe, #love {
@@ -301,10 +302,11 @@
                 grid-template-columns: 1fr;
             }
             nav ul {
-                display: grid; 
-                grid-template-columns: repeat(2, 1fr); 
-                text-align: center;
-                gap: 10px
+                gap: 5px;
+            }
+            nav a {
+                padding: 8px 12px;
+                font-size: 18px;
             }
         }
 </style>
