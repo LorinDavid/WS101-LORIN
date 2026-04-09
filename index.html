@@ -158,95 +158,114 @@
     }
 
 
-    #aboutme { background-color: rgb(210, 186, 0); color: white; }
-    #believe { background-color: rgb(125, 105, 28); color: white; }
-    #love    { background-color: rgb(21, 105, 21); color: white; }
-    #educ    { background-color: rgba(255, 255, 255, 0.5); color: black; }
+    #about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+#aboutme, #believe, #love {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
 
-    #aboutme:hover, #believe:hover, #love:hover, #educ:hover {
-        transform: scale(1.03); 
-    }
+#aboutme { background-color: rgb(210, 186, 0); color: white; }
+#believe { background-color: rgb(125, 105, 28); color: white; }
+#love    { background-color: rgb(21, 105, 21); color: white; }
 
+#aboutme:hover, #believe:hover, #love:hover {
+    transform: scale(1.03); 
+}
 
-    #aboutme h3, #believe h3, #love h3, #educ h3 {
-        font-family: cursive;
-        font-size: clamp(2rem, 5vw, 2.5rem); 
-        text-align: center;
-        margin: 0;
-    }
+#about h3 {
+    font-family: cursive;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-    #aboutme p, #believe p, #love p, #educ ul {
-        font-size: 1.1rem;
-        line-height: 1.4;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+#about p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
 
-    #educ ul li {
-        margin: 10px 0;
-    }
-
-    #educ ul li::before {
-        content: "🏫";
-        padding-right: 10px;
+@media screen and (max-width: 850px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
     }
 
     #aboutme, #believe, #love {
-        flex-direction: row; 
-        gap: 40px;
-        color: white;
+        width: 90%;
     }
-    #believe {
-        justify-content: space-between; 
+}
+
+#skills-hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#skills, #hobbies {
+    flex: 1;
+    background-color: rgb(69, 122, 197, .9);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+#skills:hover, #hobbies:hover {
+    transform: scale(1.05);
+}
+#skills li:hover, #hobbies li:hover {
+    transform: scale(1.05);
+    color: rgb(226, 203, 30);
+}
+#skills h3, #hobbies h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#skills ul, #hobbies ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+@media screen and (max-width: 700px) {
+    #skills-hobbies {
+        flex-direction: column;
+        align-items: center;
     }
 
-    #believe h3 {
-        order: 2; 
+    #skills, #hobbies {
+        width: 100%;
     }
-
-    #believe p {
-        order: 1; 
-        text-align: right; 
-    }
-
-    #about h3 {
-        flex: 1; 
-        font-family: cursive;
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
-        margin: 0;
-        min-width: 200px;
-    }
-
-    #about p {
-        flex: 2;
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin: 0;
-    }    
-
-    @media screen and (max-width: 600px) {
-        #aboutme, #believe, #love, #educ {
-            margin: 20px auto; 
-            padding: 20px;
-        }
-    }
-    @media screen and (max-width: 800px) {
-        #aboutme, #believe, #love {
-            flex-direction: column; 
-            text-align: center;    
-            gap: 15px;              
-        }
-
-        #aboutme h3, #believe h3, #love h3, 
-        #aboutme p, #believe p, #love p {
-            flex: none;             
-            width: 100%;            
-            order: 0;               
-        }
-    }
+}
     #activities{
         padding: 20px;
         border-radius: 30px;
@@ -426,8 +445,8 @@
     
 
             <div id="believe">
-                <P>I believe that everyone has the right to express themselves freely. Life is something beautiful, it’s not meant to be wasted. I also believe that love is something to be unlocked when I can stand on my own. For me, having stability within myself is better than trying to find it in another person.</P>
                 <h3>I Believe In</h3>
+                <P>I believe that everyone has the right to express themselves freely. Life is something beautiful, it’s not meant to be wasted. I also believe that love is something to be unlocked when I can stand on my own. For me, having stability within myself is better than trying to find it in another person.</P>
             </div>
 
 
@@ -439,10 +458,34 @@
 
 
 <hr>
+        <div id="skills-hobbies">
+    <div id="skills">
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Empathy</li>
+            <li>Depersonalization</li>
+            <li>Taking Responsibility</li>
+            <li>A Sense of Humor</li>
+        </ul>
+    </div>
+
+    <div id="hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Drawing</li>
+            <li>Playing Games</li>
+            <li>Photography</li>
+            <li>Watching Movies</li>
+        </ul>
+    </div>
+    
+</div>
+
+        <hr>
             <div id="educ">
                 <H3>Education</H3>
                  <ul>
-                    <li>Currently studying BSIT at PSAU</li>
+                    <li>Currently studying at PSAU</li>
                     <li>Angeles City Science Highschool, 2025</li>
                     <li>Young Builders' School Inc, 2023</li>
                 </ul>
